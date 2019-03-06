@@ -1,0 +1,6 @@
+filebeat.prospectors:
+- type: log
+  paths:
+    - /home/klagrange/Repositories/elk-playground/filebeat/apache.log
+output.logstash:
+  hosts: ["logstash:5044"]
